@@ -1,0 +1,623 @@
+[main],[36] recorder create in
+
+[recorder_create],[345] recorder_create in
+[recorder_create],[373] recorder_create out
+[main],[48] recorder create out
+
+[main],[50] recorder record in
+
+[recorder_record],[389] msg.recorder.type:pcm
+
+[os_queue_send],[51] self->fill:0,self->item_count:1
+
+[os_queue_send],[63] self->read_pos:0
+
+[write_run],[92] writer in
+
+[write_run],[94] writer get mssage
+
+[os_queue_receive],[82] self->fill:0
+
+[capture_run],[264] capture_run start
+
+[os_queue_receive],[82] self->fill:1
+
+[os_queue_receive],[99] self->write_pos:0
+
+[os_queue_receive],[103] self->write_pos:0 after 
+
+[os_queue_receive],[82] self->fill:0
+
+[capture_run],[270] capture_run receive msg.type:0
+
+[os_queue_send],[51] self->fill:0,self->item_count:1
+
+[os_queue_send],[63] self->read_pos:0
+
+[os_queue_receive],[82] self->fill:1
+
+[os_queue_receive],[99] self->write_pos:0
+
+[os_queue_receive],[103] self->write_pos:0 after 
+
+[encoder_run],[174] encode_run,get audio_type:pcm
+
+[encoder_run],[191] encode_run init begin
+
+[encoder_run],[201] encode_run init success
+
+[os_queue_send],[51] self->fill:0,self->item_count:1
+
+[os_queue_send],[63] self->read_pos:0
+
+[record_pcm_process],[30] record_pcm_process
+
+[os_queue_receive],[82] self->fill:1
+
+[os_queue_receive],[99] self->write_pos:0
+
+[os_queue_receive],[103] self->write_pos:0 after 
+
+[write_run],[99] writer queue get msg
+
+[write_run],[107] writer init begin writer.type:file
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[file_writer_init_impl],[35] [one]open native file ok, file: test_recorder.pcm, audio type:pcm
+
+[write_run],[109] writer init after
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:1024
+
+[write_run],[123] writer read data read_size:1024
+
+[write_run],[130] writer read_size:1024
+
+[file_writer_write_impl],[41] file_writer_read_impl read data_len:1024
+
+[capture_run],[301] os_stream_read frame_size:1024
+
+[record_pcm_process],[33] record_pcm_process:10
